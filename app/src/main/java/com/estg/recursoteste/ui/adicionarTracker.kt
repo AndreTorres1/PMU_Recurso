@@ -13,8 +13,6 @@ import com.estg.recursoteste.databinding.ActivityAdicionarTrackerBinding
 import com.estg.recursoteste.ui.dashboard.DashboardFragment
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
-import java.sql.Timestamp
-import java.util.*
 
 
 class adicionarTracker : AppCompatActivity() {
@@ -28,8 +26,8 @@ class adicionarTracker : AppCompatActivity() {
         binding = ActivityAdicionarTrackerBinding.inflate(layoutInflater)
 
         val data = hashMapOf(
-            "identificador" to binding.inputId.text.toString(),
-            "barco" to binding.barco.text.toString()
+            "identificador" to "2",
+            "barco" to "Q-14",
         )
 
         db.collection("Trackers")
@@ -55,7 +53,8 @@ class adicionarTracker : AppCompatActivity() {
                 val Intent1 = Intent(this, DashboardFragment::class.java)
                 startActivity(Intent1)
             }
-        }
 
+
+        }
 
 }
