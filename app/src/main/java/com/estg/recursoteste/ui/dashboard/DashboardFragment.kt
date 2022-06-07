@@ -12,7 +12,7 @@ import com.estg.recursoteste.ui.adicionarTracker
 
 
 class DashboardFragment : Fragment() {
-//variáveis
+    //variáveis
     private var _binding: FragmentDashboardBinding? = null
     private val binding get() = _binding!!
 
@@ -26,8 +26,9 @@ class DashboardFragment : Fragment() {
     ): View? {
         val bind = FragmentDashboardBinding.inflate(layoutInflater)
 
-        bind.paginaCriarTracker.setOnClickListener{
-            val intent = Intent(this@DashboardFragment.requireContext(),adicionarTracker::class.java)
+        bind.paginaCriarTracker.setOnClickListener {
+            val intent =
+                Intent(this@DashboardFragment.requireContext(), adicionarTracker::class.java)
             startActivity(intent)
 
         }
@@ -40,7 +41,6 @@ class DashboardFragment : Fragment() {
         val textView: Button = binding.paginaCriarTracker
 
     }
-
 
 
     override fun onDestroyView() {

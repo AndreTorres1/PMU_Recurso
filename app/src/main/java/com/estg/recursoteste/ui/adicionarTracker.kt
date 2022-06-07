@@ -40,21 +40,20 @@ class adicionarTracker : AppCompatActivity() {
             }
 
 
-
-            // ACOES BOTOES
-            val btninfoAvancada = findViewById<Button>(R.id.btnInformacoesAvancadas)
-            btninfoAvancada.setOnClickListener {
-                val Intent = Intent(this, informacoesAvancadas::class.java)
-                startActivity(Intent)
-
-            }
-            val btnVoltar = findViewById<Button>(R.id.btnVoltar)
-            btnVoltar.setOnClickListener {
-                val Intent1 = Intent(this, DashboardFragment::class.java)
-                startActivity(Intent1)
-            }
-
+        // ACOES BOTOES
+        val btninfoAvancada = findViewById<Button>(R.id.btnInformacoesAvancadas)
+        btninfoAvancada.setOnClickListener {
+            val Intent = Intent(this, informacoesAvancadas::class.java)
+            startActivity(Intent)
 
         }
+        val btnVoltar = findViewById<Button>(R.id.btnVoltar)
+        btnVoltar.setOnClickListener {
+            val Intent1 = Intent(this, DashboardFragment::class.java)
+            startActivity(Intent1)
+        }
+
+
+    }
 
 }

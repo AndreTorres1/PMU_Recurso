@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@color/black"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".ui.adicionarTracker">
 
     <TextView
@@ -15,9 +15,9 @@
         android:text="@string/adiciona_tracker"
         android:textColor="@color/white"
         android:textSize="40sp"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="2dp"
-        tools:layout_editor_absoluteY="36dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="36dp" />
 
     <TextView
         android:id="@+id/textView5"
@@ -41,13 +41,13 @@
         android:layout_marginBottom="408dp"
         android:backgroundTint="@color/white"
         android:gravity="center"
-        android:textColor="@color/white"
         android:hint="Introduza o identificador"
+        android:textColor="@color/white"
         android:textColorHint="@color/white"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="17dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="17dp" />
 
     <TextView
         android:id="@+id/textView6"
@@ -60,8 +60,8 @@
         app:layout_constraintBottom_toTopOf="@+id/barco"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.928"
-        tools:layout_editor_absoluteX="21dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="21dp" />
 
 
     <EditText
@@ -76,8 +76,8 @@
         android:textColorHint="@color/white"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="17dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="17dp" />
 
 
     <Button
@@ -85,6 +85,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/white"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
         android:text="Informações Avançadas"
         android:textColor="@color/black"
         android:textSize="10dp"
@@ -93,9 +95,7 @@
         app:layout_constraintHorizontal_bias="0.372"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/barco"
-        app:layout_constraintVertical_bias="0.514"
-        android:foreground="?android:attr/selectableItemBackground"
-        android:clickable="true"/>
+        app:layout_constraintVertical_bias="0.514" />
 
     <Button
         android:id="@+id/button3"
@@ -103,21 +103,23 @@
         android:layout_height="44dp"
         android:layout_marginEnd="12dp"
         android:backgroundTint="@color/white"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
         android:text="Ligar Dispositivo"
         android:textColor="@color/black"
         android:textSize="10dp"
         app:layout_constraintBottom_toTopOf="@+id/btnAdicionaTracker"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/barco"
-        app:layout_constraintVertical_bias="0.502"
-        android:foreground="?android:attr/selectableItemBackground"
-        android:clickable="true"/>
+        app:layout_constraintVertical_bias="0.502" />
 
     <Button
         android:id="@+id/btnAdicionaTracker"
         android:layout_width="201dp"
         android:layout_height="46dp"
         android:backgroundTint="@color/white"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
         android:text="Adicionar"
         android:textColor="@color/black"
         android:textSize="15dp"
@@ -126,24 +128,22 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/btnVoltar"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.867"
-        android:foreground="?android:attr/selectableItemBackground"
-        android:clickable="true"/>
+        app:layout_constraintVertical_bias="0.867" />
 
     <Button
         android:id="@+id/btnVoltar"
         android:layout_width="201dp"
         android:layout_height="46dp"
         android:backgroundTint="@color/white"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
         android:text="Voltar"
         android:textColor="@color/black"
         android:textSize="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.867"
-        android:foreground="?android:attr/selectableItemBackground"
-        android:clickable="true"/>
+        app:layout_constraintVertical_bias="0.867" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
