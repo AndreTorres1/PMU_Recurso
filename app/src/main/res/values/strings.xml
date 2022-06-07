@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">TRACKERS</string>
+    <string name="title_home">Home</string>
+    <string name="title_trackers">Trackers</string>
+    <string name="title_mapa">Mapa</string>
+    <string name="title_perfil">Perfil</string>
+    <string name="adiciona_tracker">Adiciona Tracker</string>
+    <string name="col1">ID</string>
+    <string name="col2">Barco</string>
+    <string name="col3">Estado</string>
+    <string name="col4">Ações</string>
+    <string name="row1Name">0</string>
+    <string name="row1Age">S34</string>
+    <string name="row1Surname">Disponível</string>
+    <string name="row2Name">1</string>
+    <string name="row2Age">S21</string>
+    <string name="row2Surname">Indisponível</string>
+    <string name="row3Name">5</string>
+    <string name="row3Age">S16</string>
+    <string name="row3DeleteEdit">Apagar|Editar</string>
+    <string name="profileImage"></string>
+    <string name="nameAccount"></string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="title_activity_registar_tracker">registarTracker</string>
+    <string name="title_activity_mapa_fragment1">MapaFragment1</string>
+
+</resources>

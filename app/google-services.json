@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "419134848230",
+    "firebase_url": "https://recursopmu-default-rtdb.firebaseio.com",
+    "project_id": "recursopmu",
+    "storage_bucket": "recursopmu.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:419134848230:android:a8448dea933ab14561cf27",
+        "android_client_info": {
+          "package_name": "com.estg.recursoteste"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "419134848230-kqhcciq8kou3u0v012anq5a836ucd1b4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCW6SHAc1p5L6PT5H-owI3ny59cVH2ppw8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "419134848230-kqhcciq8kou3u0v012anq5a836ucd1b4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
