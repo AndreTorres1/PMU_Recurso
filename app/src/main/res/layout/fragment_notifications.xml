@@ -19,7 +19,7 @@
 
 
     <Button
-        android:id="@+id/guardarDados"
+android:onClick="btnGuardar"
         android:layout_width="147dp"
         android:layout_height="43dp"
         android:text="Gravar"
