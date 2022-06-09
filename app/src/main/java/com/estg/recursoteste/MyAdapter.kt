@@ -32,7 +32,7 @@ class MyAdapter(private val userList: ArrayList<Data>) : RecyclerView.Adapter<My
 
     }
 
-    public class MyViewHolder(itemView : View) : RecyclerView.ViewHolder(itemView) {
+    class MyViewHolder(itemView : View) : RecyclerView.ViewHolder(itemView) {
 
         val tracker: TextView = itemView.findViewById(R.id.tracker)
         val ocorrencia: TextView = itemView.findViewById(R.id.ocorrencia)

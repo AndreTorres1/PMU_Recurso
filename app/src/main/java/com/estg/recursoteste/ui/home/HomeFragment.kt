@@ -5,13 +5,9 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
-import com.estg.recursoteste.databinding.FragmentDashboardBinding
 import com.estg.recursoteste.databinding.FragmentHomeBinding
 import com.estg.recursoteste.ui.HomeMenu.historico
-import com.estg.recursoteste.ui.adicionarTracker
 
 class HomeFragment : Fragment() {
 

@@ -30,7 +30,6 @@ class MapaFragment : Fragment(), OnMapReadyCallback {
         _binding = FragmentMapBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textMapa
 
         return root
     }
@@ -44,7 +43,7 @@ class MapaFragment : Fragment(), OnMapReadyCallback {
         mMap = googleMap
 
         // Add a marker in Sydney and move the camera
-        val sydney = LatLng(-34.0, 151.0)
+        val sydney = LatLng(-51.0, 30.0)
         mMap.addMarker(MarkerOptions().position(sydney).title("Marker in Sydney"))
         mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney))
     }
