@@ -17,9 +17,8 @@
 
 
 
-
     <Button
-android:onClick="btnGuardar"
+        android:id="@+id/btnGuardar"
         android:layout_width="147dp"
         android:layout_height="43dp"
         android:text="Gravar"
@@ -93,22 +92,6 @@ android:onClick="btnGuardar"
         tools:layout_editor_absoluteX="3dp"></EditText>
 
 
-    <EditText
-        android:id="@+id/idData"
-        android:layout_width="416dp"
-        android:layout_height="39dp"
-        android:layout_marginEnd="4dp"
-        android:backgroundTint="@color/white"
-        android:gravity="center"
-        android:textColorHint="@color/white"
-        android:textSize="17dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:textColor="@color/white"
-
-        app:layout_constraintVertical_bias="0.674"></EditText>
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -137,16 +120,6 @@ android:onClick="btnGuardar"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.446"></TextView>
 
-    <TextView
-        android:layout_width="55dp"
-        android:layout_height="25dp"
-        android:text="Data"
-        android:textColor="@color/white"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.6"></TextView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

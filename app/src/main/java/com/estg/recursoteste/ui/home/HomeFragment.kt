@@ -7,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.estg.recursoteste.databinding.FragmentHomeBinding
-import com.estg.recursoteste.ui.HomeMenu.historico
 
 class HomeFragment : Fragment() {
 
@@ -24,15 +23,10 @@ class HomeFragment : Fragment() {
     ): View {
         val bind = FragmentHomeBinding.inflate(layoutInflater)
 
-        bind.btnHistorico.setOnClickListener{
-            val intent = Intent(this@HomeFragment.requireContext(), historico::class.java)
-            startActivity(intent)
 
-        }
 
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
-
 
         return root
     }
