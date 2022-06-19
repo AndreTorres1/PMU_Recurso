@@ -29,6 +29,9 @@ class adicionarTracker : AppCompatActivity() {
         binding = ActivityAdicionarTrackerBinding.inflate(layoutInflater)
 
 
+
+
+        //GUARDA TRACKERS
             val identificador = findViewById<EditText>(R.id.inputId)
             val barco = findViewById<EditText>(R.id.barco)
             val botaoGuardar = findViewById<Button>(R.id.btnAdicionarTracker)
@@ -38,8 +41,8 @@ class adicionarTracker : AppCompatActivity() {
                 val sCargo = barco.text.toString().trim()
 
                 val user = hashMapOf(
-                    "nome" to sPrimeiroNome,
-                    "cargo" to sCargo,
+                    "identificador" to sPrimeiroNome,
+                    "barco" to sCargo,
                 )
                 db.collection("Trackers")
                     .add(user)
