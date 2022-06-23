@@ -13,15 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RecursoTeste"
         tools:targetApi="31">
-        <activity
-            android:name=".ui.dashboard.showTrackers"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
         <!--
         <activity
             android:name=".informacoesAvancadas"
@@ -65,23 +57,38 @@
              project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
              "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
         -->
+        <!--card recyclerview -->
+        <activity
+            android:name=".ui.dashboard.showTrackers"
+            android:exported="true">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--MAPA -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyD381rDAJg-BpERuL_i171gO9St8TCUuPY" /> <!-- criar tracker -->
+            android:value="AIzaSyD381rDAJg-BpERuL_i171gO9St8TCUuPY" />
+
+        <!-- criar tracker -->
         <activity
             android:name=".ui.adicionarTracker"
             android:exported="true">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity> <!-- Botao Informacoes avancadas -->
+        </activity>
+
+        <!-- Botao Informacoes avancadas -->
         <activity
             android:name=".ui.informacoesAvancadas"
             android:exported="true">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity> <!-- Main Activity -->
+        </activity>
+
+        <!-- Main Activity -->
         <activity
             android:name=".MainActivity"
             android:exported="true"
