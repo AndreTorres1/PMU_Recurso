@@ -16,7 +16,7 @@
         android:id="@+id/navigation_trackers"
         android:name="com.estg.recursoteste.ui.dashboard.DashboardFragment"
         android:label="@string/title_trackers"
-        tools:layout="@layout/fragment_dashboard" />
+        tools:layout="@layout/activity_show_trackers" />
 
     <fragment
         android:id="@+id/navigation_perfil"

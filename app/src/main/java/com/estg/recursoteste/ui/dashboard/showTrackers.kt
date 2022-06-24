@@ -18,7 +18,7 @@ class showTrackers : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_show_trackers)
+            setContentView(R.layout.activity_show_trackers)
 
         recyclerView = findViewById(R.id.recyclerView)
         recyclerView.layoutManager = LinearLayoutManager(this)
@@ -37,7 +37,7 @@ class showTrackers : AppCompatActivity() {
    private fun EventChangeListener() {
 
        db = FirebaseFirestore.getInstance()
-       db.collection("Trackers").orderBy("cargo",Query.Direction.ASCENDING).
+       db.collection("Trackers").orderBy("barco",Query.Direction.ASCENDING).
         addSnapshotListener(object  : EventListener<QuerySnapshot>{
             override fun onEvent(
                 value: QuerySnapshot?,

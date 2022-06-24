@@ -12,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.estg.recursoteste.R
 import com.estg.recursoteste.databinding.ActivityAdicionarTrackerBinding
 import com.estg.recursoteste.ui.dashboard.DashboardFragment
+import com.google.firebase.firestore.FieldValue
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import java.sql.Timestamp
@@ -35,6 +36,7 @@ class adicionarTracker : AppCompatActivity() {
             val identificador = findViewById<EditText>(R.id.inputId)
             val barco = findViewById<EditText>(R.id.barco)
             val botaoGuardar = findViewById<Button>(R.id.btnAdicionarTracker)
+        val botaoDelete = findViewById<Button>(R.id.btnApaga)
             botaoGuardar.setOnClickListener {
 
                 val sPrimeiroNome = identificador.text.toString().trim()
@@ -56,9 +58,14 @@ class adicionarTracker : AppCompatActivity() {
 
             }
 
-
-
-
+//        val docRef = db.collection("Trackers").document("/Trackers/9w7iZz1jGGTwHXu9GkDA")
+//
+//// Remove the 'capital' field from the document
+//        val updates = hashMapOf<String, Any>(
+//            "barco" to FieldValue.delete()
+//        )
+//
+//        docRef.update(updates).addOnCompleteListener { }
 
 
             // ACOES BOTOES

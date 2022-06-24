@@ -60,6 +60,50 @@
                 android:textColor="@color/black"
                 android:textSize="20sp"/>
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnEdita"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Editar"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:backgroundTint="@color/white"
+                android:textStyle="bold"
+                android:clickable="true"
+                />
+
+            <Button
+                android:id="@+id/btnApaga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apagar"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:backgroundTint="@color/white"
+                android:clickable="true"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            />
+        <ImageView
+            android:id="@+id/goLocation"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_baseline_add_location_24"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="-80dp"
+            android:clickable="true"
+            />
 
     </LinearLayout>
 
